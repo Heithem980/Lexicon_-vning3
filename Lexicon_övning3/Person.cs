@@ -34,7 +34,22 @@ namespace Lexicon_övning3
         public string LName
         {
             get { return lName; }
-            set { fName = value; }
+            set { lName = value; }
+
+        }
+
+
+        public double Height
+        {
+            get { return height; }
+            set { height = value; }
+
+        }
+
+        public double Weight
+        {
+            get { return weight; }
+            set { weight = value; }
 
         }
     }
