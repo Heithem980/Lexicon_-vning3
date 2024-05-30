@@ -20,9 +20,9 @@ namespace Lexicon_övning3
         {
             get { return age; } 
             set { age = value; }
+                
+                }
         
-        }
-
 
         public string FName
         {
