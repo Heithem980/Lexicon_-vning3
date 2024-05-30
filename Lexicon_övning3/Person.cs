@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Versioning;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lexicon_övning3
+﻿namespace Lexicon_övning3
 {
     internal class Person
     {
@@ -17,13 +10,19 @@ namespace Lexicon_övning3
         private double weight;
 
 
-        public int Age 
+        public int Age
         {
-            get { return age; } 
-            set { 
-                if (value > 0) {  age = value; }
+            get { return age; }
+            set
+            {
+                if (value > 0)
+                {
+                    age = value;
+
                 }
-        
+                else throw new ArgumentException("Age must be higher than 0!");
+            }
+
         }
 
 
@@ -44,7 +43,14 @@ namespace Lexicon_övning3
         public string LName
         {
             get { return lName; }
-            set { lName = value; }
+            set
+            {
+                if (value.Length >= 3 && value.Length <= 15)
+                {
+                    lName = value;
+                }
+                else throw new ArgumentException("LName is required and must be between 3 - 15 characters!");
+            }
 
         }
 
@@ -63,12 +69,16 @@ namespace Lexicon_övning3
 
         }
 
-        public Person (string fName,string lName) {
-        
-            
+        public Person(string fName, string lName)
+        {
+
+
             FName = fName;
             LName = lName;
-        
+
         }
+
+
+
     }
 }
