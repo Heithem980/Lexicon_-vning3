@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+
+            Person person = new Person("D", "Andersson");
+
+            //person.FName = "David";
+
+            Console.WriteLine(person.FName);
+
         }
     }
 }
