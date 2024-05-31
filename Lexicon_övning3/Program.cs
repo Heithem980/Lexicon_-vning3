@@ -9,15 +9,20 @@
 
             try
             {
-                Person person = new Person("David", "Andersson")
+                Person person = new Person()
                 {
-
-
-                    //Age = -30,
+                    FName = "Daniel",
+                    LName = "Andersson",
+                    Age = 30,
                     Height = 180.5f,
                     Weight = 75.3
                 };
-                person.Age = 22;
+
+                int age = 22;
+
+                PersonHandler handler = new PersonHandler();
+                handler.SetAge(person, age);
+
 
                 Console.WriteLine($"First Name: {person.FName}, Last Name: {person.LName}, Age: {person.Age} Height: {person.Height}, Weight: {person.Weight}");
 
@@ -32,11 +37,9 @@
 
 
 
-            PersonHandler pers = new PersonHandler();
 
-            int age = 22;
 
-            //PersonHandler.SetAge(pers, age);
+            //test
 
 
 
