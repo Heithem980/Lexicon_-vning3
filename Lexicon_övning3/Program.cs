@@ -12,7 +12,6 @@
                 Person person = new Person("David", "Andersson")
                 {
 
-
                     Age = -30,
                     Height = 180.5f,
                     Weight = 75.3
