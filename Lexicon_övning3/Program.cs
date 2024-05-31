@@ -12,11 +12,12 @@
                 Person person = new Person("David", "Andersson")
                 {
 
-                    Age = -30,
+
+                    //Age = -30,
                     Height = 180.5f,
                     Weight = 75.3
                 };
-
+                person.Age = 22;
 
                 Console.WriteLine($"First Name: {person.FName}, Last Name: {person.LName}, Age: {person.Age} Height: {person.Height}, Weight: {person.Weight}");
 
@@ -31,7 +32,11 @@
 
 
 
+            PersonHandler pers = new PersonHandler();
 
+            int age = 22;
+
+            //PersonHandler.SetAge(pers, age);
 
 
 
