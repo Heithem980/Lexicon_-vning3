@@ -9,6 +9,7 @@
 
             try
             {
+                /*
                 Person person = new Person()
                 {
                     FName = "Daniel",
@@ -18,13 +19,24 @@
                     Weight = 75.3
                 };
 
-                int age = 22;
+                */
+
+
+
+
 
                 PersonHandler handler = new PersonHandler();
-                handler.SetAge(person, age);
 
 
-                Console.WriteLine($"First Name: {person.FName}, Last Name: {person.LName}, Age: {person.Age} Height: {person.Height}, Weight: {person.Weight}");
+
+                Person person = handler.CreatePerson(44, "John", "Cena", 180, 80);
+
+                Person person2 = handler.CreatePerson(100, "David", "Andersson", 180, 80);
+
+                handler.SetFName(person, "Randy");
+
+
+                Console.WriteLine($"First Name: {person.FName}, Last Name: {person.LName}, Age: {person.Age} Height: {person.Height} cm, Weight: {person.Weight} kg");
 
 
             }
@@ -39,7 +51,7 @@
 
 
 
-            //test
+
 
 
 

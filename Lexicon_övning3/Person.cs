@@ -28,10 +28,10 @@
 
         public string FName
         {
-            get { return fName; }
+            get { return fName!; }
             set
             {
-                if (value.Length >= 2 && value.Length <= 10)
+                if (!string.IsNullOrWhiteSpace(value) && value.Length >= 2 && value.Length <= 10)
                 {
                     fName = value;
                 }
@@ -42,10 +42,10 @@
 
         public string LName
         {
-            get { return lName; }
+            get { return lName!; }
             set
             {
-                if (value.Length >= 3 && value.Length <= 15)
+                if (!string.IsNullOrWhiteSpace(value) && value.Length >= 3 && value.Length <= 15)
                 {
                     lName = value;
                 }
@@ -69,16 +69,7 @@
 
         }
 
-        /*public Person(string fName, string lName)
-        {
 
-
-            FName = fName;
-            LName = lName;
-
-        }
-        */
-        // test
 
     }
 }
