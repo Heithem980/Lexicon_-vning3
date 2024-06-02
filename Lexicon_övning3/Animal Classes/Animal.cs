@@ -1,0 +1,22 @@
+﻿namespace Lexicon_övning3.Animal_Classes
+{
+    internal abstract class Animal
+    {
+        private string _name;
+        private int _age;
+        private double _weight;
+        private string _gender;
+
+
+        public abstract void DoSound();
+
+
+        public Animal(string name, int age, double weight, string gender)
+        {
+            _name = name;
+            _age = age;
+            _weight = weight;
+            _gender = gender;
+        }
+    }
+}
