@@ -12,6 +12,7 @@
 
         public override void DoSound()
         {
+            Console.WriteLine("Chirp");
         }
     }
 }
