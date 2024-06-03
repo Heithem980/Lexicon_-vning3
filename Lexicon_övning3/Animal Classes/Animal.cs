@@ -10,11 +10,11 @@
 
         public abstract void DoSound();
 
-        protected virtual string Stats()
+        public virtual string Stats()
         {
-            return $"Name: {_name}, Weight: {_weight}, Age: {_age}";
-        }
+            return $"Name: {_name}, Weight: {_weight}, Age: {_age}, Gender: {_gender}";
 
+        }
 
         public Animal(string name, int age, double weight, string gender)
         {

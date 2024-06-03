@@ -10,6 +10,11 @@
             _wingLength = wingLength;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"Winglength: {_wingLength}";
+        }
+
         public override void DoSound()
         {
             Console.WriteLine("Chirp");
