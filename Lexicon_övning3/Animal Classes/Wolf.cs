@@ -10,6 +10,11 @@
             _packSize = packSize;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"Packsize: {_packSize}";
+        }
+
         public override void DoSound()
         {
             Console.WriteLine("Howl");

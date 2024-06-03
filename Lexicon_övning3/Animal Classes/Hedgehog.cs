@@ -10,6 +10,11 @@
             _NrOfSpikes = nrOfSpikes;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"NrOfSpikes: {_NrOfSpikes}";
+        }
+
         public override void DoSound()
         {
             Console.WriteLine("snuffle");

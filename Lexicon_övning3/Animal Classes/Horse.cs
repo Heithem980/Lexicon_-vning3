@@ -10,6 +10,11 @@
             _Speed = speed;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"Speed: {_Speed}";
+        }
+
         public override void DoSound()
         {
             Console.WriteLine("Mehehehhh");

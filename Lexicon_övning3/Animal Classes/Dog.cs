@@ -10,6 +10,11 @@
             _Breed = breed;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"Breed: {_Breed}";
+        }
+
         public override void DoSound()
         {
             Console.WriteLine("woof");

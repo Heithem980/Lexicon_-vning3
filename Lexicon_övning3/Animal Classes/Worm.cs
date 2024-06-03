@@ -10,6 +10,11 @@
             _isPoisonous = isPoionous;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + $"isPoisonous: {_isPoisonous}";
+        }
+
         public override void DoSound()
         {
             Console.WriteLine("Silent");

@@ -1,11 +1,13 @@
-﻿namespace Lexicon_övning3
+﻿using Lexicon_övning3.Animal_Classes;
+
+namespace Lexicon_övning3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            //Inkapsling
+            // 3.1 Inkapsling
 
             try
             {
@@ -45,7 +47,7 @@
 
 
 
-            //Polymorphism - Allows giving a specific implementation
+            // 3.2 Polymorfism 
 
             List<UserError> list = new List<UserError>();
 
@@ -60,6 +62,27 @@
             {
                 string errorMessage = error.UEMessage();
                 Console.WriteLine(errorMessage);
+            }
+
+
+
+
+            // 3.4 Mer Polymorfism
+
+
+            List<Animal> animals = new List<Animal>();
+
+            Bird bird = new Bird("Derek", 2, 1, "male", 20);
+
+            Wolf Wolf = new Wolf("roger", 9, 30, "male", 5);
+
+            animals.Add(bird);
+            animals.Add(Wolf);
+
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal.Stats());
+                animal.DoSound();
             }
 
 
