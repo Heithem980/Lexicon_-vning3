@@ -18,5 +18,12 @@
             _weight = weight;
             _gender = gender;
         }
+
+
     }
 }
+
+
+//  14. F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
+
+//      S: I "Animal" klassen.
