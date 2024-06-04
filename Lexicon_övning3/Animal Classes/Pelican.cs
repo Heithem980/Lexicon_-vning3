@@ -7,5 +7,12 @@
         {
             _billLength = billLength;
         }
+
+
+
+        public override string Stats()
+        {
+            return base.Stats() + $" BillLength: {_billLength}";
+        }
     }
 }

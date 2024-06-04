@@ -9,7 +9,10 @@
             _color = color;
         }
 
-
+        public override string Stats()
+        {
+            return base.Stats() + $" Color: {_color}";
+        }
 
         public override void DoSound()
         {

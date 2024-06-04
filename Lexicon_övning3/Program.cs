@@ -1,4 +1,5 @@
 ﻿using Lexicon_övning3.Animal_Classes;
+using Lexicon_övning3.Interface;
 
 namespace Lexicon_övning3
 {
@@ -76,15 +77,34 @@ namespace Lexicon_övning3
 
             Wolf Wolf = new Wolf("roger", 9, 30, "male", 5);
 
+            Wolfman wolfman = new Wolfman("Leonard", 47, 110, "male", 3);
+
+            Flamingo flamingo = new Flamingo("flam", 11, 1, "Female", 60, 50);
+
             animals.Add(bird);
             animals.Add(Wolf);
+            animals.Add(wolfman);
+            animals.Add(flamingo);
 
             foreach (Animal animal in animals)
             {
                 Console.WriteLine(animal.Stats());
                 animal.DoSound();
+
+                if (animal is IPerson person) { person.Talk(); }
             }
 
+
+
+
+            // 9. F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+
+            //    S: Eftersom häst har inget arv från Hundar.
+
+
+            // 10. F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+
+            //     S: Animal.
 
 
 

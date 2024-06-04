@@ -7,5 +7,13 @@
         {
             _legLength = legLength;
         }
+
+
+        public override string Stats()
+        {
+            return base.Stats() + $" Leglength: {_legLength}";
+        }
+
+
     }
 }
