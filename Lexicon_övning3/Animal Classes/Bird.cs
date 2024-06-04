@@ -12,7 +12,7 @@
 
         public override string Stats()
         {
-            return base.Stats() + $"Winglength: {_wingLength}";
+            return base.Stats() + $" Winglength: {_wingLength}";
         }
 
         public override void DoSound()

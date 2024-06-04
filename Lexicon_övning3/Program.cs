@@ -77,12 +77,15 @@ namespace Lexicon_övning3
 
             Wolf Wolf = new Wolf("roger", 9, 30, "male", 5);
 
+            Dog dog = new Dog("snoopy", 13, 25, "male", "Bulldog");
+
             Wolfman wolfman = new Wolfman("Leonard", 47, 110, "male", 3);
 
             Flamingo flamingo = new Flamingo("flam", 11, 1, "Female", 60, 50);
 
             animals.Add(bird);
             animals.Add(Wolf);
+            animals.Add(dog);
             animals.Add(wolfman);
             animals.Add(flamingo);
 
@@ -107,7 +110,24 @@ namespace Lexicon_övning3
             //     S: Animal.
 
 
+            // 13. F: Förklara vad det är som händer.
 
+            //     S: När Stats() metoden anropas på objektet i listan "Animal", används polymorfism för att
+            //     anropa den specifika versionen av Stats(). 
+
+            // 17. F: Varför inte?
+
+            //     S: Metoden finns inte på bas klassen 'Animal'.  
+
+
+            foreach (Animal animal in animals)
+            {
+                if (animal is Dog dogy)
+                {
+                    Console.WriteLine(dogy.Stats());
+                    Console.WriteLine(dogy.Sit());
+                }
+            }
         }
     }
 }
